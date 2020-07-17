@@ -234,7 +234,9 @@ namespace NeoSystems.Tools
         /// <returns>string to be used as an identifier</returns>
         public static string StringToIdentifier(string str)
         {
-            string t = MultiCharReplace(@" `�!""�$%^&*()+=-;'#:@~,./<>?\|",'_',str);
+            string t = MultiCharReplace(@" `�!""�$%^&*()+=-;'#:@~,./<>?\|[]",'_',str);
+            t = t.Replace('"','_');
+            t = t.Replace('\t','_');
             try
             {
                 if (Char.IsNumber(t[0]))

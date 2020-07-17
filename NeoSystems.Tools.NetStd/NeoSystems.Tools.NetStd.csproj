@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>NeoSystems.Tools.NetStd</PackageId>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <Authors>Armand Jordaan</Authors>
     <Company>Neo Systems (Pty) Ltd</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
