@@ -23,7 +23,7 @@ namespace NeoSystems.Tools
             string cleanstring = Regex.Replace(dirtystring, @"[^0-9]", "").Trim(".".ToCharArray());
             return cleanstring;
         }
-
+        
         /// <summary>
         /// Returns the text string from a string between two other string markers
         /// </summary>
@@ -214,7 +214,7 @@ namespace NeoSystems.Tools
         /// </summary>
         /// <param name="old_multichars">a string containg the characters to be replaced</param>
         /// <param name="newchar">the new character to replace with</param>
-        /// <param name="str">the result string where characters hace been replaced</param>
+        /// <param name="str">the result string where characters have been replaced</param>
         /// <returns></returns>
         public static string MultiCharReplace(string old_multichars, char newchar, string str)
         {
@@ -234,7 +234,7 @@ namespace NeoSystems.Tools
         /// <returns>string to be used as an identifier</returns>
         public static string StringToIdentifier(string str)
         {
-            string t = MultiCharReplace(@" `¬!""£$%^&*()+=-;'#:@~,./<>?\|",'_',str);
+            string t = MultiCharReplace(@" `ï¿½!""ï¿½$%^&*()+=-;'#:@~,./<>?\|",'_',str);
             try
             {
                 if (Char.IsNumber(t[0]))
@@ -377,7 +377,8 @@ namespace NeoSystems.Tools
                     (s.Contains("072")) ||
                     (s.Contains("073")) ||
                     (s.Contains("074")) ||
-                    (s.Contains("076"))
+                    (s.Contains("076")) ||
+                    (s.Contains("061")) 
                     )
                 {
                     res = true;
